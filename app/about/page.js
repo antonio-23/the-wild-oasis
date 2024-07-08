@@ -53,6 +53,7 @@ export default async function Page() {
         <Image
           src='/about-2.jpg'
           fill
+          sizes='100% 100%'
           alt='Family that manages The Wild Oasis'
           className='object-cover'
         />

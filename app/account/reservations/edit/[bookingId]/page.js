@@ -1,4 +1,5 @@
 import SubmitButton from "@/app/_components/SubmitButton";
+import WordsCount from "@/app/_components/WordsCount";
 import { updateBookingAction } from "@/app/_lib/actions";
 import { getBooking, getCabin } from "@/app/_lib/data-service";
 
@@ -42,11 +43,7 @@ export default async function Page({ params }) {
           <label htmlFor='observations'>
             Anything we should know about your stay?
           </label>
-          <textarea
-            name='observations'
-            className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
-            defaultValue={observations}
-          />
+          <WordsCount observations={observations} />
         </div>
 
         <div className='flex justify-end items-center gap-6'>
